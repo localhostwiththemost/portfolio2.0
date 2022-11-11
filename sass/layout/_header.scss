@@ -1,0 +1,111 @@
+/*HEADER*/
+/*Slide in/out animation*/
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.intro-container > h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.intro-container > h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slideToRight {
+  animation-name: slideToRight;
+  animation-duration: 2s;
+}
+
+@keyframes slideToRight {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+.hidden-left {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+header {
+  padding: 200px 200px 300px 200px;
+}
+
+main.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link-item--container {
+  display: flex;
+}
+
+.link-item--container > a {
+  color: #06c;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-item--container > a:hover {
+  margin-bottom: -2px;
+  border-bottom: 2px solid #06c;
+}
+
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: 2.5s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.blue-arrow {
+  color: #06c;
+  font-size: 18px;
+}

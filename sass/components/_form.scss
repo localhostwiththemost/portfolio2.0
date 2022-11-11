@@ -1,0 +1,40 @@
+.form-container {
+  padding: 80px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  border-radius: 6px;
+  width: 400px;
+  height: 35px;
+  border: 2px solid #424245;
+  text-indent: 8px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  padding: 12px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px solid #424245;
+  border-radius: 6px;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+}

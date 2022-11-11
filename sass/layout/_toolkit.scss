@@ -1,0 +1,71 @@
+/*TOOLKIT SECTION*/
+.section-toolkit {
+  padding: 100px 200px 200px 200px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 64px;
+  padding: 100px;
+}
+
+.logo-item--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-item--container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo-item--container:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.logo-item--container:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.logo-item--container:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.logo-item--container:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+#logo-html5 {
+  color: #e34c26;
+}
+
+#logo-css3 {
+  color: #0000ff;
+}
+
+#logo-sass {
+  color: #cd6799;
+}
+
+#logo-javascript {
+  color: #f0db4f;
+}
+
+#logo-react {
+  color: #61dbfb;
+}
+
+.logo-label {
+  font-size: 20px;
+  font-weight: 400;
+}

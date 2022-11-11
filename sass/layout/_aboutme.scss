@@ -1,0 +1,38 @@
+/*ABOUT ME SECTION*/
+.section-aboutme {
+  padding: 100px 200px 200px 200px;
+}
+
+.about-me--container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 100px;
+}
+
+.about-me--container > img {
+  display: block;
+  border-radius: 90%;
+  width: 175px;
+  height: 175px;
+}
+
+.about-me--text {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

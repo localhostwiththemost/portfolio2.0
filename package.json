@@ -1,0 +1,32 @@
+{
+  "name": "portfolio2.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-css": "node-sass --include-path scss sass/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.0",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.0"
+  },
+  "main": "main.scss",
+  "author": "\"Joe\"",
+  "license": "ISC",
+  "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+  "watch:sass": "nodemon -e scss -x \"npm run compile:sass\"",
+  "description": "Landing page for portfolio"
+}

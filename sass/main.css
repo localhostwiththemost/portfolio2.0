@@ -1,0 +1,641 @@
+/*
+      0px to 300px = Mini Phone
+      300px to 375px = Tiny Phone
+      375px to 450px = Small Phone
+      450px to 600px = Phone
+      600px to 900px = Tablet Portrait Mode
+      900px to 1200px = Tablet Landscape Mode
+      1200px to 1800px = Where our normal styles apply
+      1800px+ = Big Desktops
+
+      $BREAKPOINT ARGUMENT CHOICES:
+      - mini-phone
+      - tiny-phone
+      - small-phone
+      - phone
+      - tab-portrait
+      - tab-landscape
+      - big-desktop
+
+      EMs:
+      em's are not effected by the root font size(_base.scss)
+      1em = 16px
+      Divide the px by 16 to get the em value
+      We use em in responsive design instead of px
+
+      ORDER OF MEDIA QUERY DEFINITIONS:
+      1. Typography
+      2. General Layout
+      3. Grid
+      4. Page Layout
+      5. Components
+      */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #06c;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #0071e3;
+}
+
+.form-container {
+  padding: 80px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  border-radius: 6px;
+  width: 400px;
+  height: 35px;
+  border: 2px solid #424245;
+  text-indent: 8px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  padding: 12px 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 2px solid #424245;
+  border-radius: 6px;
+  resize: none;
+  font-family: "Inter", sans-serif;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/*Modal*/
+#portal .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.container .modal {
+  z-index: 1;
+  width: 350px;
+  height: 220px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-animation: animate 0.3s;
+          animation: animate 0.3s;
+}
+
+.modal > ion-icon {
+  color: green;
+  font-size: 40px;
+}
+
+.modal > h2 {
+  font-weight: 600;
+}
+
+.modal > h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@-webkit-keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*ABOUT ME SECTION*/
+.section-aboutme {
+  padding: 100px 200px 200px 200px;
+}
+
+.about-me--container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 100px;
+}
+
+.about-me--container > img {
+  display: block;
+  border-radius: 90%;
+  width: 175px;
+  height: 175px;
+}
+
+.about-me--text {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*MY APPS SECTION*/
+.section-apps {
+  padding: 100px 200px 200px 200px;
+}
+
+.heading-container--apps {
+  padding-bottom: 100px;
+}
+
+.img-row {
+  display: flex;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container--item {
+  position: relative;
+  flex: 25%;
+}
+
+.img-container--item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay > h2 {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/*LET'S CONNECT SECTION*/
+.section-connect {
+  padding: 100px 200px 200px 200px;
+}
+
+.connect-container {
+  display: flex;
+  justify-content: center;
+}
+
+.connect-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.connect-heading-container > h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.connect-heading-container > h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/*FOOTER*/
+footer {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+footer > a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+footer > a:link {
+  text-decoration: none;
+}
+
+footer > a:hover {
+  color: #0071e3;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+footer > a:active {
+  text-decoration: none;
+}
+
+/*HEADER*/
+/*Slide in/out animation*/
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.intro-container > h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.intro-container > h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.slideToRight {
+  -webkit-animation-name: slideToRight;
+          animation-name: slideToRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes slideToRight {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+.hidden-left {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+header {
+  padding: 200px 200px 300px 200px;
+}
+
+main.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link-item--container {
+  display: flex;
+}
+
+.link-item--container > a {
+  color: #06c;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-item--container > a:hover {
+  margin-bottom: -2px;
+  border-bottom: 2px solid #06c;
+}
+
+.slideUp {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+.blue-arrow {
+  color: #06c;
+  font-size: 18px;
+}
+
+/*NAVBAR*/
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 8000;
+}
+
+.nav-logo {
+  font-size: 28px;
+}
+
+nav > a {
+  text-decoration: none;
+  border: none;
+}
+
+nav > a:hover {
+  border: none;
+}
+
+nav.dark {
+  color: #ffffff;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2b283a;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #f5f5f5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #fff;
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  color: #918e9b;
+}
+
+nav.dark .toggler--dark {
+  color: #fff;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/*TOOLKIT SECTION*/
+.section-toolkit {
+  padding: 100px 200px 200px 200px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 64px;
+  padding: 100px;
+}
+
+.logo-item--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-item--container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo-item--container:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.logo-item--container:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.logo-item--container:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.logo-item--container:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+#logo-html5 {
+  color: #e34c26;
+}
+
+#logo-css3 {
+  color: #0000ff;
+}
+
+#logo-sass {
+  color: #cd6799;
+}
+
+#logo-javascript {
+  color: #f0db4f;
+}
+
+#logo-react {
+  color: #61dbfb;
+}
+
+.logo-label {
+  font-size: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */

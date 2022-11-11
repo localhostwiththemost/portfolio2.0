@@ -1,0 +1,61 @@
+/*MY APPS SECTION*/
+.section-apps {
+  padding: 100px 200px 200px 200px;
+}
+
+.heading-container--apps {
+  padding-bottom: 100px;
+}
+
+.img-row {
+  display: flex;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container--item {
+  position: relative;
+  flex: 25%;
+}
+
+.img-container--item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay > h2 {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
