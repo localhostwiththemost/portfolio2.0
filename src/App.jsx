@@ -1,8 +1,8 @@
 import "../sass/styles.js";
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Content from "./Content";
+import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
+import Content from "./Content.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(true);

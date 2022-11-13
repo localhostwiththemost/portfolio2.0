@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import Modal from "./Modal";
+import Modal from "./Modal.jsx";
 import { send } from "emailjs-com";
 
 function Content(props) {
