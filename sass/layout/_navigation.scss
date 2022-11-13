@@ -5,14 +5,14 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 18px;
-  backdrop-filter: saturate(180%) blur(20px);
+  padding: 1.8rem;
+  backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
 }
 
 .nav-logo {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 nav > a {
@@ -34,13 +34,13 @@ nav.dark {
 }
 
 .toggler p {
-  font-size: 0.625rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .toggler--slider {
-  width: 25px;
-  height: 13px;
+  width: 2.5rem;
+  height: 1.3rem;
   background-color: #2b283a;
   border-radius: 2rem;
   margin-inline: 7px;
@@ -58,8 +58,8 @@ nav.dark .toggler--slider {
 }
 
 .toggler--slider--circle {
-  height: 13px;
-  width: 13px;
+  height: 1.3rem;
+  width: 1.3rem;
   background-color: white;
   border-radius: 50%;
 }

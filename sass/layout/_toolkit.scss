@@ -1,12 +1,16 @@
 /*TOOLKIT SECTION*/
 .section-toolkit {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .heading-container {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -14,9 +18,14 @@
 .logo-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  font-size: 64px;
-  padding: 100px;
+  gap: 4rem;
+  font-size: 6.4rem;
+  padding: 10rem;
+
+  @media only screen and (max-width: 600px) {
+    gap: 3rem;
+    flex-direction: column;
+  }
 }
 
 .logo-item--container {
@@ -66,6 +75,6 @@
 }
 
 .logo-label {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }

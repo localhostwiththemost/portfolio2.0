@@ -1,10 +1,14 @@
 /*MY APPS SECTION*/
 .section-apps {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .heading-container--apps {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .img-row {
@@ -28,16 +32,32 @@
   transition: 0.5s ease;
   opacity: 0;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 475px) {
+    font-size: 1rem;
+  }
 }
 
 .img-container--item {
   position: relative;
   flex: 25%;
+
+  & > img {
+    display: block;
+    height: auto;
+    width: 100%;
+    min-width: 12rem;
+  }
 }
 
 .img-container--item:hover .overlay {
@@ -45,17 +65,11 @@
 }
 
 .overlay > h2 {
-  padding: 10px;
+  padding: 1rem;
   white-space: nowrap;
 }
 
 .btn-container {
   display: flex;
   gap: 8px;
-}
-
-img {
-  display: block;
-  height: auto;
-  width: 100%;
 }

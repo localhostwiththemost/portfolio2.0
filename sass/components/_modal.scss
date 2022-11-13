@@ -13,8 +13,8 @@
 }
 .container .modal {
   z-index: 1;
-  width: 350px;
-  height: 220px;
+  width: 35rem;
+  height: 22rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -28,16 +28,18 @@
 
 .modal > ion-icon {
   color: green;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .modal > h2 {
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .modal > h3 {
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 @keyframes animate {

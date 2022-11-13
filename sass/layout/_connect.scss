@@ -1,6 +1,10 @@
 /*LET'S CONNECT SECTION*/
 .section-connect {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .connect-container {
@@ -13,16 +17,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
   white-space: nowrap;
 }
 
 .connect-heading-container > h1 {
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 .connect-heading-container > h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }

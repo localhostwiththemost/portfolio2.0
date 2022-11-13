@@ -37,6 +37,28 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%; /*62.5% of 16px = 10px (We use a % to be more user friendly, 16px is default)*/
+  /*Global font-size (Each rem unit is now 10px)*/
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 37.5%;
+  }
 }
 
 body {
@@ -46,18 +68,18 @@ body {
 }
 
 button {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-radius: 20px;
+  border-radius: 2rem;
   border: none;
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
   background-color: #06c;
   color: #fff;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
@@ -78,12 +100,17 @@ form {
 
 input {
   border-radius: 6px;
-  width: 400px;
-  height: 35px;
+  width: 40rem;
+  height: 3.5rem;
   border: 2px solid #424245;
   text-indent: 8px;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+}
+@media only screen and (max-width: 375px) {
+  input {
+    width: 26rem;
+  }
 }
 
 input:focus {
@@ -91,15 +118,20 @@ input:focus {
 }
 
 textarea {
-  padding: 12px 8px;
+  padding: 1.2rem 8px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1.6rem;
   border: 2px solid #424245;
   border-radius: 6px;
   resize: none;
   font-family: "Inter", sans-serif;
-  width: 400px;
-  margin-bottom: 10px;
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 375px) {
+  textarea {
+    width: 26rem;
+  }
 }
 
 textarea:focus {
@@ -122,8 +154,8 @@ textarea:focus {
 
 .container .modal {
   z-index: 1;
-  width: 350px;
-  height: 220px;
+  width: 35rem;
+  height: 22rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -138,16 +170,18 @@ textarea:focus {
 
 .modal > ion-icon {
   color: green;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .modal > h2 {
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .modal > h3 {
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 @-webkit-keyframes animate {
@@ -169,26 +203,42 @@ textarea:focus {
 }
 /*ABOUT ME SECTION*/
 .section-aboutme {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .section-aboutme {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .about-me--container {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 100px;
+  gap: 3rem;
+  padding: 10rem;
 }
-
+@media only screen and (max-width: 1200px) {
+  .about-me--container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about-me--container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .about-me--container > img {
   display: block;
   border-radius: 90%;
-  width: 175px;
-  height: 175px;
+  width: 17.5rem;
+  height: 17.5rem;
 }
 
 .about-me--text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 140%;
+  word-wrap: break-word;
 }
 
 .fadeIn {
@@ -217,11 +267,16 @@ textarea:focus {
 }
 /*MY APPS SECTION*/
 .section-apps {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .section-apps {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .heading-container--apps {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .img-row {
@@ -245,16 +300,33 @@ textarea:focus {
   transition: 0.5s ease;
   opacity: 0;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 1200px) {
+  .overlay {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .overlay {
+    font-size: 1rem;
+  }
 }
 
 .img-container--item {
   position: relative;
   flex: 25%;
+}
+.img-container--item > img {
+  display: block;
+  height: auto;
+  width: 100%;
+  min-width: 12rem;
 }
 
 .img-container--item:hover .overlay {
@@ -262,7 +334,7 @@ textarea:focus {
 }
 
 .overlay > h2 {
-  padding: 10px;
+  padding: 1rem;
   white-space: nowrap;
 }
 
@@ -271,15 +343,14 @@ textarea:focus {
   gap: 8px;
 }
 
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
 /*LET'S CONNECT SECTION*/
 .section-connect {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .section-connect {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .connect-container {
@@ -292,36 +363,36 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
   white-space: nowrap;
 }
 
 .connect-heading-container > h1 {
-  font-size: 45px;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 .connect-heading-container > h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
 /*FOOTER*/
 footer {
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
+          backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 2rem;
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 footer > a {
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 footer > a:link {
@@ -344,17 +415,17 @@ footer > a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 1.2rem;
   white-space: nowrap;
 }
 
 .intro-container > h1 {
-  font-size: 55px;
+  font-size: 5.5rem;
   font-weight: 600;
 }
 
 .intro-container > h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
@@ -408,7 +479,12 @@ footer > a:active {
 }
 
 header {
-  padding: 200px 200px 300px 200px;
+  padding: 20rem 20rem 30rem 20rem;
+}
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 20rem 10rem 30rem 10rem;
+  }
 }
 
 main.dark {
@@ -419,7 +495,7 @@ main.dark {
 .link-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .link-item--container {
@@ -428,7 +504,7 @@ main.dark {
 
 .link-item--container > a {
   color: #06c;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
@@ -473,7 +549,7 @@ main.dark {
 }
 .blue-arrow {
   color: #06c;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 /*NAVBAR*/
@@ -484,15 +560,15 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 18px;
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  padding: 1.8rem;
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
+          backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
 }
 
 .nav-logo {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 nav > a {
@@ -514,13 +590,13 @@ nav.dark {
 }
 
 .toggler p {
-  font-size: 0.625rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .toggler--slider {
-  width: 25px;
-  height: 13px;
+  width: 2.5rem;
+  height: 1.3rem;
   background-color: #2b283a;
   border-radius: 2rem;
   margin-inline: 7px;
@@ -538,8 +614,8 @@ nav.dark .toggler--slider {
 }
 
 .toggler--slider--circle {
-  height: 13px;
-  width: 13px;
+  height: 1.3rem;
+  width: 1.3rem;
   background-color: white;
   border-radius: 50%;
 }
@@ -570,13 +646,18 @@ nav.dark .toggler--slider {
 
 /*TOOLKIT SECTION*/
 .section-toolkit {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .section-toolkit {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .heading-container {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -584,9 +665,15 @@ nav.dark .toggler--slider {
 .logo-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  font-size: 64px;
-  padding: 100px;
+  gap: 4rem;
+  font-size: 6.4rem;
+  padding: 10rem;
+}
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    gap: 3rem;
+    flex-direction: column;
+  }
 }
 
 .logo-item--container {
@@ -636,6 +723,6 @@ nav.dark .toggler--slider {
 }
 
 .logo-label {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

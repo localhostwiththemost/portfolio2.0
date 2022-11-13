@@ -1,25 +1,39 @@
 /*ABOUT ME SECTION*/
 .section-aboutme {
-  padding: 100px 200px 200px 200px;
+  padding: 10rem 20rem 20rem 20rem;
+
+  @media only screen and (max-width: 900px) {
+    padding: 10rem 10rem 10rem 10rem;
+  }
 }
 
 .about-me--container {
   display: flex;
   align-items: center;
-  gap: 30px;
-  padding: 100px;
-}
+  gap: 3rem;
+  padding: 10rem;
 
-.about-me--container > img {
-  display: block;
-  border-radius: 90%;
-  width: 175px;
-  height: 175px;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 450px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & > img {
+    display: block;
+    border-radius: 90%;
+    width: 17.5rem;
+    height: 17.5rem;
+  }
 }
 
 .about-me--text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 140%;
+  word-wrap: break-word;
 }
 
 .fadeIn {
