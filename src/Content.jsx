@@ -199,8 +199,15 @@ function Content(props) {
               <div className="overlay">
                 <h2>Color Scheme Generator</h2>
                 <div className="btn-container">
-                  <button>Live</button>
-                  <button>Repo</button>
+                  <div className="button">Live</div>
+                  <a
+                    href="https://github.com/localhostwiththemost/color-scheme"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
                 </div>
               </div>
             </div>
@@ -210,8 +217,15 @@ function Content(props) {
               <div className="overlay">
                 <h2>Movie Watchlist App</h2>
                 <div className="btn-container">
-                  <button>Live</button>
-                  <button>Repo</button>
+                  <div className="button">Live</div>
+                  <a
+                    href="https://github.com/localhostwiththemost/watchlist"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
                 </div>
               </div>
             </div>

@@ -17,3 +17,24 @@ button {
 button:hover {
   background-color: #0071e3;
 }
+
+// APPS SECTION
+.button {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #06c;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #0071e3;
+}
