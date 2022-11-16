@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "dist",
     "build-css": "node-sass --include-path scss sass/main.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
