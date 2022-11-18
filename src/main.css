@@ -87,6 +87,26 @@ button:hover {
   background-color: #0071e3;
 }
 
+.button {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #06c;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #0071e3;
+}
+
 .form-container {
   padding: 80px;
 }
@@ -164,8 +184,7 @@ textarea:focus {
   gap: 5px;
   border-radius: 5px;
   position: relative;
-  -webkit-animation: animate 0.3s;
-          animation: animate 0.3s;
+  animation: animate 0.3s;
 }
 
 .modal > ion-icon {
@@ -182,15 +201,6 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1rem;
-}
-
-@-webkit-keyframes animate {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
 }
 
 @keyframes animate {
@@ -242,19 +252,8 @@ textarea:focus {
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
 }
 
 @keyframes fadeIn {
@@ -312,10 +311,16 @@ textarea:focus {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 450px) {
   .overlay {
     font-size: 1rem;
+    gap: 0.4rem;
   }
+}
+.overlay > h2 {
+  padding: 1rem;
+  white-space: pre-wrap;
+  text-align: center;
 }
 
 .img-container--item {
@@ -326,21 +331,43 @@ textarea:focus {
   display: block;
   height: auto;
   width: 100%;
-  min-width: 12rem;
+  min-width: 13rem;
 }
 
 .img-container--item:hover .overlay {
   opacity: 1;
 }
 
-.overlay > h2 {
-  padding: 1rem;
-  white-space: nowrap;
-}
-
 .btn-container {
   display: flex;
   gap: 8px;
+}
+
+.button:link {
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+.button:active {
+  text-decoration: none;
+}
+@media only screen and (max-width: 450px) {
+  .button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1rem;
+    margin-top: -1rem;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .button {
+    font-size: 0.9rem;
+  }
 }
 
 /*LET'S CONNECT SECTION*/
@@ -379,8 +406,7 @@ textarea:focus {
 
 /*FOOTER*/
 footer {
-  -webkit-backdrop-filter: saturate(180%) blur(2rem);
-          backdrop-filter: saturate(180%) blur(2rem);
+  backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   padding: 2rem;
   display: flex;
@@ -430,23 +456,8 @@ footer > a:active {
 }
 
 .slideToRight {
-  -webkit-animation-name: slideToRight;
-          animation-name: slideToRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-@-webkit-keyframes slideToRight {
-  0% {
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-  }
+  animation-name: slideToRight;
+  animation-duration: 2s;
 }
 
 @keyframes slideToRight {
@@ -516,23 +527,8 @@ main.dark {
 }
 
 .slideUp {
-  -webkit-animation-name: slideUp;
-          animation-name: slideUp;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-    opacity: 0;
-    filter: blur(3px);
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
+  animation-name: slideUp;
+  animation-duration: 2.5s;
 }
 
 @keyframes slideUp {
@@ -554,15 +550,13 @@ main.dark {
 
 /*NAVBAR*/
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1.8rem;
-  -webkit-backdrop-filter: saturate(180%) blur(2rem);
-          backdrop-filter: saturate(180%) blur(2rem);
+  backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
 }
@@ -725,4 +719,6 @@ nav.dark .toggler--slider {
 .logo-label {
   font-size: 2rem;
   font-weight: 400;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
