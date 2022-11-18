@@ -193,7 +193,7 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
-                src="dist/images/color-scheme.webp"
+                src="./public/images/color-scheme.webp"
                 alt="Color Scheme Generator App"
               />
               <div className="overlay">
@@ -213,7 +213,10 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="dist/images/watchlist.png" alt="Movie Watchlist App" />
+              <img
+                src="./public/images/watchlist.png"
+                alt="Movie Watchlist App"
+              />
               <div className="overlay">
                 <h2>Movie Watchlist App</h2>
                 <div className="btn-container">
@@ -233,7 +236,7 @@ function Content(props) {
 
           <div className="img-row">
             <div className="img-container--item">
-              <img src="dist/images/keyboard.jpg" alt="Coming Soon" />
+              <img src="./public/images/keyboard.jpg" alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -244,7 +247,7 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="dist/images/keyboard.jpg" alt="Coming Soon" />
+              <img src="./public/images/keyboard.jpg" alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -276,7 +279,7 @@ function Content(props) {
                 : "about-me--container"
             }
           >
-            <img src="dist/images/ape.png" alt="Bored Ape" />
+            <img src="./public/images/ape.png" alt="Bored Ape" />
 
             <div className="about-me--text">
               <p>
