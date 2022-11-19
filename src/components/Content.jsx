@@ -2,6 +2,10 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import Modal from "./Modal.jsx";
 import { send } from "emailjs-com";
+import color from "/public/images/color-scheme.webp";
+import watchlist from "/public/images/watchlist.png";
+import placeholder from "/public/images/keyboard.jpg";
+import me from "/public/images/ape.png";
 
 function Content(props) {
   const [formData, setFormData] = React.useState({
@@ -192,10 +196,7 @@ function Content(props) {
 
           <div className="img-row">
             <div className="img-container--item">
-              <img
-                src="/images/color-scheme.webp"
-                alt="Color Scheme Generator App"
-              />
+              <img src={color} alt="Color Scheme Generator App" />
               <div className="overlay">
                 <h2>Color Scheme Generator</h2>
                 <div className="btn-container">
@@ -213,7 +214,7 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="/images/watchlist.png" alt="Movie Watchlist App" />
+              <img src={watchlist} alt="Movie Watchlist App" />
               <div className="overlay">
                 <h2>Movie Watchlist App</h2>
                 <div className="btn-container">
@@ -233,7 +234,7 @@ function Content(props) {
 
           <div className="img-row">
             <div className="img-container--item">
-              <img src="/images/keyboard.jpg" alt="Coming Soon" />
+              <img src={placeholder} alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -244,7 +245,7 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="/images/keyboard.jpg" alt="Coming Soon" />
+              <img src={placeholder} alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -276,7 +277,7 @@ function Content(props) {
                 : "about-me--container"
             }
           >
-            <img src="/images/ape.png" alt="Bored Ape" />
+            <img src={me} alt="Bored Ape" />
 
             <div className="about-me--text">
               <p>
