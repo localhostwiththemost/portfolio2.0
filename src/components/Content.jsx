@@ -280,7 +280,7 @@ function Content(props) {
                 : "about-me--container"
             }
           >
-            <img src="./images/ape.png" alt="Bored Ape" />
+            <img src="src/images/ape.png" alt="Bored Ape" />
 
             <div className="about-me--text">
               <p>
