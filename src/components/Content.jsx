@@ -197,7 +197,7 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
-                src="./images/color-scheme.webp"
+                src="src/images/color-scheme.webp"
                 alt="Color Scheme Generator App"
               />
               <div className="overlay">
@@ -217,7 +217,7 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="./images/watchlist.png" alt="Movie Watchlist App" />
+              <img src="src/images/watchlist.png" alt="Movie Watchlist App" />
               <div className="overlay">
                 <h2>Movie Watchlist App</h2>
                 <div className="btn-container">
@@ -237,7 +237,7 @@ function Content(props) {
 
           <div className="img-row">
             <div className="img-container--item">
-              <img src="./images/keyboard.jpg" alt="Coming Soon" />
+              <img src="src/images/keyboard.jpg" alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -248,7 +248,7 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="./images/keyboard.jpg" alt="Coming Soon" />
+              <img src="src/images/keyboard.jpg" alt="Coming Soon" />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
