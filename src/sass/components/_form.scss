@@ -1,5 +1,9 @@
 .form-container {
-  padding: 80px;
+  padding: 8rem;
+
+  @media only screen and (max-width: 600px) {
+    padding: 6rem;
+  }
 }
 
 form {

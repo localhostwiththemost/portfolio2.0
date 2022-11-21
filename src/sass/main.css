@@ -189,7 +189,8 @@ textarea:focus {
   gap: 5px;
   border-radius: 5px;
   position: relative;
-  animation: animate 0.3s;
+  -webkit-animation: animate 0.3s;
+          animation: animate 0.3s;
 }
 
 .modal > ion-icon {
@@ -206,6 +207,15 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+
+@-webkit-keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes animate {
@@ -267,8 +277,19 @@ textarea:focus {
 }
 
 .fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 2.5s;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
@@ -436,7 +457,8 @@ textarea:focus {
 
 /*FOOTER*/
 footer {
-  backdrop-filter: saturate(180%) blur(2rem);
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
+          backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   padding: 2rem;
   display: flex;
@@ -486,8 +508,23 @@ footer > a:active {
 }
 
 .slideToRight {
-  animation-name: slideToRight;
-  animation-duration: 2s;
+  -webkit-animation-name: slideToRight;
+          animation-name: slideToRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes slideToRight {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideToRight {
@@ -562,8 +599,23 @@ main.dark {
 }
 
 .slideUp {
-  animation-name: slideUp;
-  animation-duration: 2.5s;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
@@ -585,13 +637,15 @@ main.dark {
 
 /*NAVBAR*/
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1.8rem;
-  backdrop-filter: saturate(180%) blur(2rem);
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
+          backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
 }
@@ -760,6 +814,4 @@ nav.dark .toggler--slider {
 .logo-label {
   font-size: 2rem;
   font-weight: 400;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

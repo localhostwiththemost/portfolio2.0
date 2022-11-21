@@ -5,10 +5,18 @@
   @media only screen and (max-width: 900px) {
     padding: 10rem 10rem 10rem 10rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    padding: 20rem 5rem;
+  }
 }
 
 .heading-container--apps {
   padding-bottom: 10rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 8rem;
+  }
 }
 
 .img-row {
