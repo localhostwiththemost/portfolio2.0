@@ -12,7 +12,11 @@
 }
 
 .heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 3rem;
   font-weight: 600;
@@ -20,7 +24,11 @@
 }
 
 .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 4rem;
   font-size: 6.4rem;
@@ -29,33 +37,53 @@
   @media only screen and (max-width: 600px) {
     padding: 8rem;
     gap: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
 
 .logo-item--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .logo-item--container:nth-child(2) {
+  -webkit-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
   transition-delay: 200ms;
 }
 
 .logo-item--container:nth-child(3) {
+  -webkit-transition-delay: 400ms;
+  -o-transition-delay: 400ms;
   transition-delay: 400ms;
 }
 
 .logo-item--container:nth-child(4) {
+  -webkit-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
   transition-delay: 600ms;
 }
 
 .logo-item--container:nth-child(5) {
+  -webkit-transition-delay: 800ms;
+  -o-transition-delay: 800ms;
   transition-delay: 800ms;
 }
 
 .logo-item--container:nth-child(6) {
+  -webkit-transition-delay: 1000ms;
+  -o-transition-delay: 1000ms;
   transition-delay: 1000ms;
 }
 

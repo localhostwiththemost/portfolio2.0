@@ -197,15 +197,23 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
-                src="src/images/color-scheme.webp"
-                alt="Color Scheme Generator App"
+                src="src/images/e-commerce.webp"
+                alt="E-commerce Frontend"
+                className="app-img__1"
               />
               <div className="overlay">
-                <h2>Color Scheme Generator</h2>
+                <h2>E-Commerce Frontend</h2>
                 <div className="btn-container">
-                  <div className="button">Live</div>
                   <a
-                    href="https://github.com/localhostwiththemost/color-scheme"
+                    href="https://e-commerce-sneaker.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/e-commerce"
                     target="_blank"
                     rel="noopener"
                     className="button"
@@ -217,13 +225,24 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="src/images/watchlist.png" alt="Movie Watchlist App" />
+              <img
+                src="src/images/todo.webp"
+                alt="Kanban Board App"
+                className="app-img__2"
+              />
               <div className="overlay">
-                <h2>Movie Watchlist App</h2>
+                <h2>Kanban Board</h2>
                 <div className="btn-container">
-                  <div className="button">Live</div>
                   <a
-                    href="https://github.com/localhostwiththemost/watchlist"
+                    href="https://jstodo-project.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/jstodo"
                     target="_blank"
                     rel="noopener"
                     className="button"
@@ -237,7 +256,11 @@ function Content(props) {
 
           <div className="img-row">
             <div className="img-container--item">
-              <img src="src/images/keyboard.jpg" alt="Coming Soon" />
+              <img
+                src="src/images/keyboard.webp"
+                alt="Coming Soon"
+                className="app-img__3"
+              />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -248,7 +271,11 @@ function Content(props) {
             </div>
 
             <div className="img-container--item">
-              <img src="src/images/keyboard.jpg" alt="Coming Soon" />
+              <img
+                src="src/images/keyboard.webp"
+                alt="Coming Soon"
+                className="app-img__4"
+              />
               <div className="overlay">
                 <h2>Coming Soon</h2>
                 <div className="btn-container">
@@ -280,7 +307,7 @@ function Content(props) {
                 : "about-me--container"
             }
           >
-            <img src="src/images/ape.png" alt="Bored Ape" />
+            <img src="src/images/ape.png" alt="A photo of Joe" />
 
             <div className="about-me--text">
               <p>

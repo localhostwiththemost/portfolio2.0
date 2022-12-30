@@ -1,11 +1,20 @@
 /*NAVBAR*/
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.8rem;
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
   backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
@@ -29,7 +38,11 @@ nav.dark {
 }
 
 .toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -45,10 +58,17 @@ nav.dark {
   border-radius: 2rem;
   margin-inline: 7px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 1px solid black;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -85,5 +105,7 @@ nav.dark .toggler--dark {
 }
 
 nav.dark .toggler--slider {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }

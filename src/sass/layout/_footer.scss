@@ -1,9 +1,14 @@
 /*FOOTER*/
 footer {
+  -webkit-backdrop-filter: saturate(180%) blur(2rem);
   backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   gap: 1.5rem;
 }

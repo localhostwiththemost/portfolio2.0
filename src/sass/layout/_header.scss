@@ -1,8 +1,15 @@
 /*HEADER*/
 /*Slide in/out animation*/
 .intro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.2rem;
   white-space: nowrap;
@@ -19,34 +26,66 @@
 }
 
 .slideToRight {
+  -webkit-animation-name: slideToRight;
   animation-name: slideToRight;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-@keyframes slideToRight {
+@-webkit-keyframes slideToRight {
   0% {
     opacity: 0;
+    -webkit-filter: blur(3px);
     filter: blur(3px);
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
   100% {
     opacity: 1;
+    -webkit-filter: blur(0);
     filter: blur(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
 .hidden-left {
   opacity: 0;
+  -webkit-filter: blur(3px);
   filter: blur(3px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .show {
   opacity: 1;
+  -webkit-filter: blur(0);
   filter: blur(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -72,12 +111,19 @@ main.dark {
 }
 
 .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   gap: 2rem;
 }
 
 .link-item--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -95,20 +141,44 @@ main.dark {
 }
 
 .slideUp {
+  -webkit-animation-name: slideUp;
   animation-name: slideUp;
+  -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
-@keyframes slideUp {
+@-webkit-keyframes slideUp {
   0% {
     opacity: 0;
+    -webkit-filter: blur(3px);
     filter: blur(3px);
+    -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
 
   100% {
     opacity: 1;
+    -webkit-filter: blur(0);
     filter: blur(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }

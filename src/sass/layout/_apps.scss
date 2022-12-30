@@ -112,3 +112,19 @@
     font-size: 0.9rem;
   }
 }
+
+.app-img__1 {
+  border-radius: 8px 0 0 0;
+}
+
+.app-img__2 {
+  border-radius: 0 8px 0 0;
+}
+
+.app-img__3 {
+  border-radius: 0 0 0 8px;
+}
+
+.app-img__4 {
+  border-radius: 0 0 8px 0;
+}

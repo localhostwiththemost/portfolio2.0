@@ -12,12 +12,19 @@
 }
 
 .about-me--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 3rem;
   padding: 10rem;
 
   @media only screen and (max-width: 1200px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -45,8 +52,20 @@
 }
 
 .fadeIn {
+  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {

@@ -190,7 +190,7 @@ textarea:focus {
   border-radius: 5px;
   position: relative;
   -webkit-animation: animate 0.3s;
-          animation: animate 0.3s;
+  animation: animate 0.3s;
 }
 
 .modal > ion-icon {
@@ -217,7 +217,6 @@ textarea:focus {
     transform: scale(1);
   }
 }
-
 @keyframes animate {
   from {
     transform: scale(0.5);
@@ -278,9 +277,9 @@ textarea:focus {
 
 .fadeIn {
   -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -291,7 +290,6 @@ textarea:focus {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -416,6 +414,22 @@ textarea:focus {
   }
 }
 
+.app-img__1 {
+  border-radius: 8px 0 0 0;
+}
+
+.app-img__2 {
+  border-radius: 0 8px 0 0;
+}
+
+.app-img__3 {
+  border-radius: 0 0 0 8px;
+}
+
+.app-img__4 {
+  border-radius: 0 0 8px 0;
+}
+
 /*LET'S CONNECT SECTION*/
 .section-connect {
   padding: 10rem 20rem 20rem 20rem;
@@ -458,7 +472,7 @@ textarea:focus {
 /*FOOTER*/
 footer {
   -webkit-backdrop-filter: saturate(180%) blur(2rem);
-          backdrop-filter: saturate(180%) blur(2rem);
+  backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   padding: 2rem;
   display: flex;
@@ -509,9 +523,9 @@ footer > a:active {
 
 .slideToRight {
   -webkit-animation-name: slideToRight;
-          animation-name: slideToRight;
+  animation-name: slideToRight;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes slideToRight {
@@ -526,7 +540,6 @@ footer > a:active {
     transform: translateX(0);
   }
 }
-
 @keyframes slideToRight {
   0% {
     opacity: 0;
@@ -600,9 +613,9 @@ main.dark {
 
 .slideUp {
   -webkit-animation-name: slideUp;
-          animation-name: slideUp;
+  animation-name: slideUp;
   -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  animation-duration: 2.5s;
 }
 
 @-webkit-keyframes slideUp {
@@ -617,7 +630,6 @@ main.dark {
     transform: translateY(0);
   }
 }
-
 @keyframes slideUp {
   0% {
     opacity: 0;
@@ -645,7 +657,7 @@ nav {
   justify-content: space-between;
   padding: 1.8rem;
   -webkit-backdrop-filter: saturate(180%) blur(2rem);
-          backdrop-filter: saturate(180%) blur(2rem);
+  backdrop-filter: saturate(180%) blur(2rem);
   background: rgba(0, 0, 0, 0.8);
   z-index: 8000;
 }
