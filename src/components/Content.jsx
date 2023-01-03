@@ -231,7 +231,7 @@ function Content(props) {
                 className="app-img__2"
               />
               <div className="overlay">
-                <h2>Kanban Board</h2>
+                <h2>Todo App</h2>
                 <div className="btn-container">
                   <a
                     href="https://jstodo-project.netlify.app/"
@@ -257,15 +257,29 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
-                src="src/images/keyboard.webp"
-                alt="Coming Soon"
+                src="src/images/travel.webp"
+                alt="The Untroubled Traveller Website"
                 className="app-img__3"
               />
               <div className="overlay">
-                <h2>Coming Soon</h2>
+                <h2>Travel Agency Site</h2>
                 <div className="btn-container">
-                  {/* <button>Live</button>
-                  <button>Repo</button> */}
+                  <a
+                    href="https://theuntroubledtraveler.com/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/travel"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
                 </div>
               </div>
             </div>
