@@ -200,6 +200,7 @@ function Content(props) {
                 src="src/images/e-commerce.webp"
                 alt="E-commerce Frontend"
                 className="app-img__1"
+                loading="lazy"
               />
               <div className="overlay">
                 <h2>E-Commerce Frontend</h2>
@@ -229,6 +230,7 @@ function Content(props) {
                 src="src/images/todo.webp"
                 alt="Kanban Board App"
                 className="app-img__2"
+                loading="lazy"
               />
               <div className="overlay">
                 <h2>Todo App</h2>
@@ -260,6 +262,7 @@ function Content(props) {
                 src="src/images/travel.webp"
                 alt="The Untroubled Traveller Website"
                 className="app-img__3"
+                loading="lazy"
               />
               <div className="overlay">
                 <h2>Travel Agency Site</h2>
@@ -289,6 +292,7 @@ function Content(props) {
                 src="src/images/keyboard.webp"
                 alt="Coming Soon"
                 className="app-img__4"
+                loading="lazy"
               />
               <div className="overlay">
                 <h2>Coming Soon</h2>
@@ -321,7 +325,7 @@ function Content(props) {
                 : "about-me--container"
             }
           >
-            <img src="src/images/ape.png" alt="A photo of Joe" />
+            <img src="src/images/me.webp" alt="A photo of Joe" loading="lazy" />
 
             <div className="about-me--text">
               <p>
