@@ -197,9 +197,39 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
+                src="src/images/hooloo.webp"
+                alt="React movie app"
+                className="app-img__1"
+                loading="lazy"
+              />
+              <div className="overlay">
+                <h2>Streaming Platform Frontend</h2>
+                <div className="btn-container">
+                  <a
+                    href="https://hooloo.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/hooloo"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="img-container--item">
+              <img
                 src="src/images/e-commerce.webp"
                 alt="E-commerce Frontend"
-                className="app-img__1"
+                className="app-img__2"
                 loading="lazy"
               />
               <div className="overlay">
@@ -224,12 +254,14 @@ function Content(props) {
                 </div>
               </div>
             </div>
+          </div>
 
+          <div className="img-row">
             <div className="img-container--item">
               <img
                 src="src/images/todo.webp"
                 alt="Kanban Board App"
-                className="app-img__2"
+                className="app-img__3"
                 loading="lazy"
               />
               <div className="overlay">
@@ -254,14 +286,12 @@ function Content(props) {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="img-row">
             <div className="img-container--item">
               <img
                 src="src/images/travel.webp"
                 alt="The Untroubled Traveller Website"
-                className="app-img__3"
+                className="app-img__4"
                 loading="lazy"
               />
               <div className="overlay">
@@ -283,22 +313,6 @@ function Content(props) {
                   >
                     Repo
                   </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="img-container--item">
-              <img
-                src="src/images/keyboard.webp"
-                alt="Coming Soon"
-                className="app-img__4"
-                loading="lazy"
-              />
-              <div className="overlay">
-                <h2>Coming Soon</h2>
-                <div className="btn-container">
-                  {/* <button>Live</button>
-                  <button>Repo</button> */}
                 </div>
               </div>
             </div>
