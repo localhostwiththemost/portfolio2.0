@@ -203,7 +203,7 @@ function Content(props) {
                 loading="lazy"
               />
               <div className="overlay">
-                <h2>Streaming Platform Frontend</h2>
+                <h2>Streaming Service Frontend</h2>
                 <div className="btn-container">
                   <a
                     href="https://hooloo.netlify.app/"
@@ -227,9 +227,41 @@ function Content(props) {
 
             <div className="img-container--item">
               <img
-                src="src/images/e-commerce.webp"
-                alt="E-commerce Frontend"
+                src="src/images/quiz.webp"
+                alt="Computer Science Quiz App"
                 className="app-img__2"
+                loading="lazy"
+              />
+              <div className="overlay">
+                <h2>CS Quiz App</h2>
+                <div className="btn-container">
+                  <a
+                    href="https://cs-trivia.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/react-quiz"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="img-row">
+            <div className="img-container--item">
+              <img
+                src="src/images/e-commerce.webp"
+                alt="E-Commerce Frontend"
+                className="app-img__3"
                 loading="lazy"
               />
               <div className="overlay">
@@ -254,14 +286,12 @@ function Content(props) {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="img-row">
             <div className="img-container--item">
               <img
                 src="src/images/todo.webp"
-                alt="Kanban Board App"
-                className="app-img__3"
+                alt="Todo App"
+                className="app-img__4"
                 loading="lazy"
               />
               <div className="overlay">
@@ -277,36 +307,6 @@ function Content(props) {
                   </a>
                   <a
                     href="https://github.com/localhostwiththemost/jstodo"
-                    target="_blank"
-                    rel="noopener"
-                    className="button"
-                  >
-                    Repo
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="img-container--item">
-              <img
-                src="src/images/travel.webp"
-                alt="The Untroubled Traveller Website"
-                className="app-img__4"
-                loading="lazy"
-              />
-              <div className="overlay">
-                <h2>Travel Agency Site</h2>
-                <div className="btn-container">
-                  <a
-                    href="https://theuntroubledtraveler.com/"
-                    target="_blank"
-                    rel="noopener"
-                    className="button"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/localhostwiththemost/travel"
                     target="_blank"
                     rel="noopener"
                     className="button"
