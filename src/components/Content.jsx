@@ -2,10 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import Modal from "./Modal.jsx";
 import { send } from "emailjs-com";
-//import color from "public/images/color-scheme.webp";
-//import watchlist from "public/images/watchlist.png";
-//import placeholder from "public/images/keyboard.jpg";
-//import me from "public/images/ape.png";
+import Banner from "./Banner.jsx";
 
 function Content(props) {
   const [formData, setFormData] = React.useState({
@@ -94,6 +91,8 @@ function Content(props) {
             </div>
           </div>
         </header>
+
+        <Banner />
 
         <section className="section-toolkit">
           <div

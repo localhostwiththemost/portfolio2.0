@@ -13,6 +13,7 @@
   align-items: center;
   gap: 1.2rem;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .intro-container > h1 {
@@ -98,6 +99,7 @@ header {
 
   @media only screen and (max-width: 900px) {
     padding: 20rem 10rem 30rem 10rem;
+    height: 100vh;
   }
 
   @media only screen and (max-width: 600px) {

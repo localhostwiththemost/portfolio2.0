@@ -1,0 +1,36 @@
+.banner {
+  background-color: #eed202;
+  padding: 2em 0;
+  overflow: hidden;
+  border: 10px solid pink;
+  -o-border-image: -o-repeating-linear-gradient(
+      145deg,
+      #000,
+      #000 20px,
+      #eed202 20px,
+      #eed202 40px
+    )
+    10;
+  border-image: repeating-linear-gradient(
+      -55deg,
+      #000,
+      #000 20px,
+      #eed202 20px,
+      #eed202 40px
+    )
+    10;
+  margin-bottom: 25rem;
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 20rem;
+  }
+}
+
+.banner-text {
+  color: #000;
+  white-space: nowrap;
+  font-size: 2.125rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
