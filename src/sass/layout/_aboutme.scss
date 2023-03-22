@@ -1,6 +1,6 @@
 /*ABOUT ME SECTION*/
 .section-aboutme {
-  padding: 10rem 20rem 20rem 20rem;
+  padding: 10rem 20rem 10rem 20rem;
 
   @media only screen and (max-width: 900px) {
     padding: 10rem 10rem 10rem 10rem;
@@ -47,7 +47,7 @@
 
 .about-me--text {
   font-size: 2rem;
-  line-height: 140%;
+  line-height: 2.6rem;
   word-wrap: break-word;
 }
 
@@ -75,5 +75,38 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+.WOW {
+  display: inline-block;
+  animation: bounce-colors 1s ease-in-out infinite;
+  font-weight: 600;
+}
+
+span:nth-child(1) {
+  color: red;
+  animation-delay: 0s;
+}
+
+span:nth-child(2) {
+  color: blue;
+  animation-delay: 0.2s;
+}
+
+span:nth-child(3) {
+  color: limegreen;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce-colors {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.8rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

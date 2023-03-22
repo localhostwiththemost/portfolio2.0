@@ -345,9 +345,11 @@ function Content(props) {
                 Hi, I'm Joe; a front end developer. I've always had a passion
                 for putting things together. Whether that be from scratch or
                 with an already established foundation, my end goal has always
-                been the same: WOW the user. If you find my work interesting or
-                share a love for tech, feel free to reach out using the form
-                below.
+                been the same: <span className="WOW">W</span>
+                <span className="WOW">O</span>
+                <span className="WOW">W</span> the user. If you find my work
+                interesting or share a love for tech, feel free to reach out
+                using the form below.
               </p>
             </div>
           </div>

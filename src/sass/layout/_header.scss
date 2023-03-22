@@ -95,7 +95,8 @@
 }
 
 header {
-  padding: 20rem 20rem 30rem 20rem;
+  padding: 20rem 20rem 0rem 20rem;
+  height: 100vh;
 
   @media only screen and (max-width: 900px) {
     padding: 20rem 10rem 30rem 10rem;

@@ -74,7 +74,6 @@ body {
   border: 10px solid pink;
   -o-border-image: -o-repeating-linear-gradient(145deg, #000, #000 20px, #eed202 20px, #eed202 40px) 10;
   border-image: repeating-linear-gradient(-55deg, #000, #000 20px, #eed202 20px, #eed202 40px) 10;
-  margin-bottom: 25rem;
 }
 @media only screen and (max-width: 900px) {
   .banner {
@@ -278,7 +277,7 @@ textarea:focus {
 }
 /*ABOUT ME SECTION*/
 .section-aboutme {
-  padding: 10rem 20rem 20rem 20rem;
+  padding: 10rem 20rem 10rem 20rem;
 }
 @media only screen and (max-width: 900px) {
   .section-aboutme {
@@ -329,7 +328,7 @@ textarea:focus {
 
 .about-me--text {
   font-size: 2rem;
-  line-height: 140%;
+  line-height: 2.6rem;
   word-wrap: break-word;
 }
 
@@ -356,9 +355,41 @@ textarea:focus {
     opacity: 1;
   }
 }
+.WOW {
+  display: inline-block;
+  animation: bounce-colors 1s ease-in-out infinite;
+  font-weight: 600;
+}
+
+span:nth-child(1) {
+  color: red;
+  animation-delay: 0s;
+}
+
+span:nth-child(2) {
+  color: blue;
+  animation-delay: 0.2s;
+}
+
+span:nth-child(3) {
+  color: limegreen;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce-colors {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.8rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /*MY APPS SECTION*/
 .section-apps {
-  padding: 10rem 20rem 20rem 20rem;
+  padding: 10rem 20rem 10rem 20rem;
 }
 @media only screen and (max-width: 900px) {
   .section-apps {
@@ -490,7 +521,7 @@ textarea:focus {
 
 /*LET'S CONNECT SECTION*/
 .section-connect {
-  padding: 10rem 20rem 20rem 20rem;
+  padding: 10rem 20rem 10rem 20rem;
 }
 @media only screen and (max-width: 900px) {
   .section-connect {
@@ -669,7 +700,8 @@ footer > a:active {
 }
 
 header {
-  padding: 20rem 20rem 30rem 20rem;
+  padding: 20rem 20rem 0rem 20rem;
+  height: 100vh;
 }
 @media only screen and (max-width: 900px) {
   header {
@@ -876,7 +908,7 @@ nav.dark .toggler--slider {
 
 /*TOOLKIT SECTION*/
 .section-toolkit {
-  padding: 20rem 20rem 20rem 20rem;
+  padding: 20rem 20rem 10rem 20rem;
 }
 @media only screen and (max-width: 900px) {
   .section-toolkit {
