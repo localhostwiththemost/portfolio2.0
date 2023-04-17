@@ -196,16 +196,46 @@ function Content(props) {
           <div className="img-row">
             <div className="img-container--item">
               <img
-                src="src/images/hooloo.webp"
-                alt="React movie app"
+                src="src/images/petamigo.webp"
+                alt="React pet adoption app"
                 className="app-img__1"
+                loading="lazy"
+              />
+              <div className="overlay">
+                <h2>Pet Adoption App</h2>
+                <div className="btn-container">
+                  <a
+                    href="https://petamigo-7f92b.web.app/"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Live
+                  </a>
+                  <a
+                    href="https://github.com/localhostwiththemost/petamigo"
+                    target="_blank"
+                    rel="noopener"
+                    className="button"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="img-container--item">
+              <img
+                src="src/images/hooloo.webp"
+                alt="React streaming service frontend"
+                className="app-img__2"
                 loading="lazy"
               />
               <div className="overlay">
                 <h2>Streaming Service Frontend</h2>
                 <div className="btn-container">
                   <a
-                    href="https://hooloo.netlify.app/"
+                    href="https://hooloo.netlify.app"
                     target="_blank"
                     rel="noopener"
                     className="button"
@@ -223,16 +253,18 @@ function Content(props) {
                 </div>
               </div>
             </div>
+          </div>
 
+          <div className="img-row">
             <div className="img-container--item">
               <img
                 src="src/images/quiz.webp"
-                alt="Computer Science Quiz App"
-                className="app-img__2"
+                alt="React computer science quiz"
+                className="app-img__3"
                 loading="lazy"
               />
               <div className="overlay">
-                <h2>CS Quiz App</h2>
+                <h2>React CS Quiz</h2>
                 <div className="btn-container">
                   <a
                     href="https://cs-trivia.netlify.app/"
@@ -253,49 +285,17 @@ function Content(props) {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="img-row">
-            <div className="img-container--item">
-              <img
-                src="src/images/e-commerce.webp"
-                alt="E-Commerce Frontend"
-                className="app-img__3"
-                loading="lazy"
-              />
-              <div className="overlay">
-                <h2>E-Commerce Frontend</h2>
-                <div className="btn-container">
-                  <a
-                    href="https://e-commerce-sneaker.netlify.app/"
-                    target="_blank"
-                    rel="noopener"
-                    className="button"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href="https://github.com/localhostwiththemost/e-commerce"
-                    target="_blank"
-                    rel="noopener"
-                    className="button"
-                  >
-                    Repo
-                  </a>
-                </div>
-              </div>
-            </div>
 
             <div className="img-container--item">
               <img
-                src="src/images/todo.webp"
-                alt="Todo App"
+                src="src/images/keyboard.webp"
+                alt="Coming Soon"
                 className="app-img__4"
                 loading="lazy"
               />
               <div className="overlay">
-                <h2>Todo App</h2>
-                <div className="btn-container">
+                <h2>Coming Soon</h2>
+                {/* <div className="btn-container">
                   <a
                     href="https://jstodo-project.netlify.app/"
                     target="_blank"
@@ -312,7 +312,7 @@ function Content(props) {
                   >
                     Repo
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
